@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teclas de Atalho do VS Code</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --panel: #111827;
+        --card: #1f2937;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --accent: #60a5fa;
+        --accent-2: #34d399;
+        --border: #374151;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #0f172a, #111827);
+        color: var(--text);
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 24px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 24px;
+        color: var(--accent);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: rgba(31, 41, 55, 0.9);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+      }
+
+      .card h2 {
+        margin-top: 0;
+        margin-bottom: 16px;
+        color: var(--accent-2);
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 8px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 10px 8px;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--accent);
+        width: 38%;
+      }
+
+      kbd {
+        display: inline-block;
+        padding: 5px 9px;
+        background: #0b1220;
+        border: 1px solid #475569;
+        border-bottom-width: 3px;
+        border-radius: 6px;
+        font-family: Consolas, "Courier New", monospace;
+        color: #f8fafc;
+        margin: 2px 0;
+      }
+
+      .legend {
+        margin-top: 28px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Teclas de Atalho do Visual Studio Code</h1>
+
+      <div class="grid">
+        <section class="card">
+          <h2>Arquivos e Navegação</h2>
+          <table>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>P</kbd></th>
+              <td>Abre o painel de arquivos para localizar rapidamente um arquivo.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd></th>
+              <td>Abre a paleta de comandos do VS Code.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>Tab</kbd></th>
+              <td>Alterna entre arquivos abertos.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>B</kbd></th>
+              <td>Abre/fecha a barra lateral.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>J</kbd></th>
+              <td>Abre/fecha o painel de terminal e outras áreas.</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="card">
+          <h2>Edição</h2>
+          <table>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>X</kbd></th>
+              <td>Recorta a linha ou seleção atual.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>C</kbd></th>
+              <td>Copia a linha ou seleção atual.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>V</kbd></th>
+              <td>Cola o conteúdo copiado.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>Z</kbd></th>
+              <td>Desfaz a última ação.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd></th>
+              <td>Refaz a última ação.</td>
+            </tr>
+            <tr>
+              <th><kbd>Alt</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd></th>
+              <td>Mova a linha para cima ou para baixo.</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="card">
+          <h2>Busca e Substituição</h2>
+          <table>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>F</kbd></th>
+              <td>Busca no arquivo atual.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>H</kbd></th>
+              <td>Abre a substituição de texto.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd></th>
+              <td>Pesquisa em toda a pasta/projeto.</td>
+            </tr>
+            <tr>
+              <th><kbd>F2</kbd></th>
+              <td>Renomeia o símbolo selecionado.</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="card">
+          <h2>Seleção e Código</h2>
+          <table>
+            <tr>
+              <th><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd></th>
+              <td>Duplica a linha atual para baixo.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>/</kbd></th>
+              <td>Comenta ou descomenta a linha atual.</td>
+            </tr>
+            <tr>
+              <th><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></th>
+              <td>Formata o documento inteiro.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>Space</kbd></th>
+              <td>Ativa sugestões de autocompletar.</td>
+            </tr>
+            <tr>
+              <th><kbd>F12</kbd></th>
+              <td>Vai para a definição do símbolo.</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="card">
+          <h2>Terminal e Depuração</h2>
+          <table>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>`</kbd></th>
+              <td>Abre/fecha o terminal integrado.</td>
+            </tr>
+            <tr>
+              <th><kbd>F5</kbd></th>
+              <td>Inicia a depuração.</td>
+            </tr>
+            <tr>
+              <th><kbd>Shift</kbd> + <kbd>F5</kbd></th>
+              <td>Para a depuração.</td>
+            </tr>
+            <tr>
+              <th><kbd>F9</kbd></th>
+              <td>Alterna breakpoint na linha atual.</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="card">
+          <h2>Gerais</h2>
+          <table>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>S</kbd></th>
+              <td>Salva o arquivo atual.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></th>
+              <td>Salva todos os arquivos.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>W</kbd></th>
+              <td>Fecha a aba atual.</td>
+            </tr>
+            <tr>
+              <th><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd></th>
+              <td>Reabre a última aba fechada.</td>
+            </tr>
+          </table>
+        </section>
+      </div>
+
+      <div class="legend">
+        Dica: Muitos atalhos podem variar conforme a extensão ou sistema operacional, mas estes são os mais usados no VS Code.
+      </div>
+    </div>
+  </body>
+</html>
